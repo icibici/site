@@ -62,7 +62,6 @@
                     <img src="images/hardware.jpg" alt="">
                     <div class="caption">
 			    <h3><a href="#the_project">the project</a></h3>
-                       <!-- <p>(the motivation)</p><br> -->
                     </div>
                 </div>
             </div>
@@ -72,9 +71,6 @@
                     <img src="images/felix.jpg" alt="">
                     <div class="caption">
 			    <h3><a href="#the_software">the software</a></h3>
-                        <!-- <p>
-                            <a href="https://github.com/icibici/Android-diagnostic-app" class="btn btn-default"><img src="images/GitHub-Mark-32px.png"/>go to repo</a>
-                        </p> -->
                     </div>
                 </div>
             </div>
@@ -116,26 +112,27 @@
             <p class="text-justify">
             In summer 2016, we met to build a low-cost brain-computer interface that you could plug into your phone.  We want to give everyone interested in BCI technology the chance to try it out.</p> 
 		    
-        <p class="text-justify">
-		Two months later, we premiered the world's first &pound;20 BCI at <a href="https://www.emfcamp.org/">EMF camp</a>.
+            <p class="text-justify">
+	    Two months later, we premiered the world's first &pound;20 BCI at <a href="https://www.emfcamp.org/">EMF camp</a>.
             </p>
 
             <p class="text-justify">
             As of summer 2017, we have:<br> 
-<!--            </p>
-
-            <p class="text-justify">
--->            <ul>
-                    <li> On a budget 2 electrode EEG system </li>
-                    <li> An <a href="http://synaptitude.me/blog/a-quick-intro-to-ssvep-steady-state-visually-evoked-potential/">SSVEP operated brain computer interface (BCI)</a> where the user can select emojis or letters from a virtual keyboard on a smartphone. </li>
+            <ul>
+                    <li> a simple, two electrode EEG kit that amplifies neural signals, and modulates them for input to an audio jack; </li>
+		    <li> a basic Android diagnostic app; </li>
+	            <li> an <a href="http://synaptitude.me/blog/a-quick-intro-to-ssvep-steady-state-visually-evoked-potential/">SSVEP</a> Unity text entry app;</li>
             </ul>
+	    We'd love you to add to the list.
             </p>
-
 
             <h3>What we have</h3>
 
             <p class="text-justify">
-                We have managed to design a circuit that reads a bipolar EEG signal and sends it to a smartphone (Just an android at the moment) which reads signal and shows some info, not real BCI yet... but we're working on it!
+                The v0.1 circuit reads a bipolar EEG signal and sends the signal out along an audio cable, for use in a smartphone, 
+		    tablet, laptop, etc.  To do so, the circuit performs two stages of amplification, boosting the neural signal 
+		    (in the microvolt range) to one detectable by an audio port (in the millivolt range), and adds a 1kHZ signal 
+		    to allow the neural signals over the audio device's high-pass filter
             </p>
                 
             <p class="text-justify">
