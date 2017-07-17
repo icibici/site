@@ -106,7 +106,7 @@
             <br>
             <h3>Motivation</h3>
             <p class="text-justify">
-            In summer 2016, we met to build a low-cost brain-computer interface that you could plug into your phone.  We want toeveryone interested in BCI technology to be able to try it out.</p> 
+            In summer 2016, we met to build a low-cost brain-computer interface that you could plug into your phone.  We want everyone interested in BCI technology to be able to try it out.</p> 
 		    
             <p class="text-justify">
 	    Two months later, we premiered the world's first &pound;20 BCI at <a href="https://www.emfcamp.org/">EMF camp</a> as 'smartphone-BCI'.
@@ -130,35 +130,34 @@
             </p>
                 
             <p class="text-justify">
-                EEG signals are very difficult to work with as they are very noisy and of low amplitude. Also, the interesting bits live in the range of around 4Hz to 32Hz (depending of what you want to do with them) and the smartphone sound card will ignore everything below 20Hz, which complicates the thing a bit more.
+                EEG signals are difficult to work with as they are very faint, and easily interfered with by other signals, including muscle movements and mains electricity - both of which are much more powerful.  Also, the interesting frequencies range between 4Hz to 32Hz (depending on the intended use), but a smartphone sound card will filter out all signals below 20Hz.
             </p>
 
             <p class="text-justify">
-                In a nutshell, the v0.1 circuit:
+                Thus, the v0.1 circuit:
                 <ol>
-                        <li> amplifies the signal that comes from the electrodes so we work with it</li>
-                        <li> modulates the acquired signal using <a href="https://en.wikipedia.org/wiki/Amplitude_modulation"> amplitude modulation </a> and sends it to a smartphone via the jack bypassing the frequency restriction of 20Hz</li>
+                        <li> amplifies the signals that comes from the electrodes, boosting them from the microvolt to the millivolt range;</li>
+                        <li> uses <a href="https://en.wikipedia.org/wiki/Amplitude_modulation"> amplitude modulation </a> to add a 1kHz carrier tone, allowing the signal to bypass the 20Hz high-pass filter behind the phone's audio jack.</li>
                 </ol>
             </p>
 
             <p class="text-justify">
-                For more details of the circuit, visit the <a href="https://github.com/jmanart/smartphone-bci-hardware/">hardware repo</a>. The circuit design files are open source: please use it, and improve upon it.
+	      For more details of the circuit, visit the <a href="https://github.com/jmanart/smartphone-bci-hardware/">hardware repo</a>. The circuit design files are open source: please use them, and improve upon them.
             </p>
 
             <p class="text-justify">
-                The circuit needs to be paired with an app or driver (or programme as it can ported to "perfectly" run in computer). This app needs to send the carrier signal that piggybacks the EEG signal and then perform a frequency analysis so we can extract the features of the original EEG signal. There is an example of an android app that does this  whole process in the software <a href="https://github.com/jmanart/smartphone-bci-hardware/"> repo </a>.
+              The signal can be used by any software that accepts and uses signals from an audio port.  We describe, below, two apps that are in development alongside the hardware.  In both cases, frequency analysis is performed on the input signal, to extract the features of the original EEG signal. There is an example of an android app that does this whole process in the software <a href="https://github.com/jmanart/smartphone-bci-hardware/"> repo </a>.
             </p>
 
             <p class="text-justify">
-                The app is under heavy development and right now just offers:
-            </p>
-                
-                <ul>
-                        <li>Has the SmartPhoneBCI driver functionality</li>
-                        <li>Shows the frequency analysis of the EEG signal</li>
-                        <li>Shows how the alpha band power fluctuates over time</li>
-                        <li>Shows a broader frequency analysis that can used as a sanity check for the hardware</li>
-                </ul>
+                The diagnostic Android app is under development and right now just offers:
+            <br>
+              <ul>
+                <li>has the SmartPhoneBCI driver functionality</li>
+                <li>shows the frequency analysis of the EEG signal</li>
+                <li>shows how the alpha band power fluctuates over time</li>
+                <li>shows a broader frequency analysis that can used as a sanity check for the hardware</li>
+              </ul>
 
             <p class="text-justify">
                 The code needs to undergo some refactoring and implement some more cool functionality.
@@ -167,7 +166,6 @@
 
             <p class="text-justify">
                 Ryan Lintott is working on a Unity-based SSVEP app that hopefully will work in all supported platforms (namely iOS, Android, Windows, OSX and Linux).
-
             </p>
 
         <hr>
