@@ -68,18 +68,18 @@
 
             <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
-                    <img src="images/felix.jpg" alt="">
+                    <img src="images/pcb_01.jpg" alt="">
                     <div class="caption">
-			    <h3><a href="#the_software">the software</a></h3>
+			    <h3><a href="#the_hardware">the hardware</a></h3>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-3 col-sm-6 hero-feature">
+	    <div class="col-md-3 col-sm-6 hero-feature">
                 <div class="thumbnail">
-                    <img src="images/pcb_01.jpg" alt="">
+                    <img src="images/felix.jpg" alt="">
                     <div class="caption">
-			    <h3><a href="#the_hardware">the hardware</a></h3>
+			    <h3><a href="#the_software">the software</a></h3>
                     </div>
                 </div>
             </div>
@@ -150,7 +150,7 @@
             </p>
 
             <p class="text-justify">
-                The diagnostic Android app is under development and right now just offers:
+                The <a href="https://github.com/icibici/Android-diagnostic-app">diagnostic Android app</a> is under development and right now just offers:
             <br>
               <ul>
                 <li>has the SmartPhoneBCI driver functionality</li>
@@ -161,11 +161,10 @@
 
             <p class="text-justify">
                 The code needs to undergo some refactoring and implement some more cool functionality.
-
             </p>
 
             <p class="text-justify">
-                Ryan Lintott is working on a Unity-based SSVEP app that hopefully will work in all supported platforms (namely iOS, Android, Windows, OSX and Linux).
+                Ryan Lintott is working on a Unity-based SSVEP <a href="https://github.com/ryanlintott/SSVEP_keyboard">text-entry app</a> that hopefully will work in all supported platforms (namely iOS, Android, Windows, OSX and Linux).
             </p>
 
         <hr>
@@ -222,10 +221,10 @@
             <h2>The Software</h2><a name="the_software"></a>
         </header> 
             <br>
-				<h3>APK</h3>            
-            <p class="text-justify">The basic Android diagnostic app is available for <a href="https://github.com/capitancambio/smartphone-bci/releases">download here</a>. 
+<h3><a href="https://github.com/icibici/Android-diagnostic-app">Android diagnostic APK</a></h3>            
+            <p class="text-justify">The basic Android diagnostic app is available for <a href="https://github.com/capitancambio/smartphone-bci/releases">download here</a>.  (Most important <b>todo</b>: ensure latest apk uses 9 July 2017 AlphaPlot.java) 
 				
-				<h3>Sanity Check</h3>
+				<h4>Sanity Check</h4>
          	<p class="text-justify">
          		After assembling the hardware, install the APK and connect the kit to do a <strong>sanity check</strong>:
             	<ul>
@@ -247,7 +246,7 @@
          	</p>    
 <hr>
 
-				<h3>Experiments</h3>
+				<h4>Experiments</h4>
          	<p class="text-justify">
                 Placing the electrodes using the <a href="https://en.wikipedia.org/wiki/10-20_system_%28EEG%29">10-20 system</a>:
          	  <ul> 
@@ -259,7 +258,7 @@
 					<br />Experiments with the completed kit:
 <ul>
 <li> the Android app's "sanity check" to detect the 1kHz carrier signal and 50Hz mains
-<li> the Frist plot titled "Spectrum" might show changes when winks, blinks, jaw movements are performed
+<li> the first plot titled "Spectrum" might show changes when winks, blinks, jaw movements are performed
 <li> <a href="https://en.wikipedia.org/wiki/Alpha_wave">alpha waves</a> (7.5 - 12.5 Hz) from o1 and o2 or (to a lesser extent) fp1 and fp2 when user's eyes are closed
 <ul>
 	<li>Swipe to the next graph: it displays the power of your alpha band over time. <br>This value corresponds to a moving average, so it may take some time to settle.</li>
@@ -269,8 +268,13 @@
 <li> SSVEP: peaks at the frequency of an observed flashing stimulus from o1 and o2
 <li>Experiment with placing the pcb on a table, holding it in your hand, etc. Where do you get the better signal?</li>         	
 </ul>         	
-         	</p>    
-        <header class=" hero-spacer"> 
+</p>    
+
+            <br>
+<h3><a href="https://github.com/ryanlintott/SSVEP_keyboard">Unity text entry</a></h3>            
+<p class="text-justify">v0.06.  The larger the screen on your device, the better this works.  Check out the github page for a complete description and Android download. iOS version available on Testflight from Ryan Lintott.</p>
+
+<header class=" hero-spacer"> 
             <h2>The Team</h2><a name="the_team"></a>
         </header> 
             <br>
