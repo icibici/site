@@ -105,11 +105,11 @@
         </header>
             <br>
 	
-	<h3><strong>ALERT: if your board has a blue screw terminal, the positive and negative battery terminals are reversed.  Do not use the board in this configuration.</strong></h3>
+	<h3><strong>ALERT: if your board has a blue screw terminal, the positive and negative battery terminals are reversed.  Read the hardware instructions, below, carefully before use.</strong></h3>
 	
 	<p class="text-justify">
           <span style="color:red">
-          TL;DR: join the <a href="https://groups.google.com/forum/#!forum/icibici"/>icibici</a> Google Group to plug yourself in.`
+          TL;DR: join the <a href="https://groups.google.com/forum/#!forum/icibici"/>icibici</a> Google Group to plug yourself in.
 	</span>
 	</p>
 
@@ -196,7 +196,7 @@
 					<li>1x bathing cap (separately)
 					<li>kitchen foil (separately; to SHLD electrodes)
 				</ul> 
-				Please check your kit before assembly/use​. You'll need a knife to cut the electrodes and a small flat head screw driver to connect these cables ...
+				Please check your kit before assembly/use​. You'll need a knife to cut the electrode ends and a small flat head screw driver to connect these cables ...
             </p>
             <h3>Assembly</h3>    
             <p class="text-justify">
@@ -220,9 +220,10 @@
 			<li>3.5mm audio cable into the audio jack of both the PCB and the smartphone/tablet/device (n.b. the audio cable can be temperamental - 
 				you can check it with a regular audio signal)</li>
 			<li>Connect the battery. <strong>If your board has a blue screw terminal, the positive and negative battery 
-				terminals are probably reversed</strong>.  Do <strong>not</strong> use the board in this configuration.
-			If your board is correctly configured, the terminal labeled "+" will have flanges.  If your board is incorrectly
-			configured, a fix is to fasten the battery to the board using twist ties or coated wire works well.</li>
+				terminals are reversed</strong>.  Do <strong>not</strong> use the board in this configuration.
+			If your board is correctly configured, the terminal labeled "+" will have flanges.  If the battery terminals are 
+				reversed, attach the battery to the terminals <strong>the wrong way around</strong>, using twist ties or coated 
+				wire.</li>
 			<li>using the board
 				<ol>
 					<li><strong>do NOT use icibici while your phone is connected to the mains (i.e. charging)</strong></li>
@@ -236,6 +237,18 @@
             	</ol>
             </p>
 
+            <h3>Blue screw terminal board: if you run the current through in reverse</h3>
+            <p class="text-justify">
+	      Running the current in reverse through the boards (e.g. by attaching a battery directly to the battery terminals on
+		    a board with a blue screw terminal) <strong>should not harm the boards</strong>.  On 8 October 2017, we tested this
+		    by attaching an external signal generator to a positive and negative terminal separated by a saline solution in which 
+		    the icibici electrodes were immersed: a functioning board should be able to read the signal crossing the saline 
+		    solution.  We first ran current backwards through the boards.  We then re-inserted the battery the right way around 
+		    and immersed the electrodes in the saline solution: they continued to correctly read the test signal.  (In both early 
+		    cases, the boards did not initially read the signals correctly.  After we successfully read the signals on later 
+		    boards that we had run in reverse, we re-tested the initial boards, and found that they did read the signals 
+		    correctly.  We do not know why our two initial tests were unsuccessful.)
+	
             <h3>Source files</h3>
             <p class="text-justify">
 		    <ol>
