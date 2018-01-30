@@ -155,7 +155,8 @@
             </p>
 
             <p class="text-justify">
-              The signal can be used by any software that accepts and uses signals from an audio port.  We describe, below, two apps that are in development alongside the hardware.  In both cases, frequency analysis is performed on the input signal, to extract the features of the original EEG signal. There is an example of an android app that does this whole process in the software <a href="https://github.com/jmanart/smartphone-bci-hardware/"> repo </a>.
+              The signal can be used by any software that accepts and uses signals from an audio port.  We describe, below, two apps that are in development alongside the hardware.  In both cases, frequency analysis is performed on the input signal, to extract the features of the original EEG signal. There is an example of an android app that does this whole process in 
+		    <a href="https://github.com/jmanart/smartphone-bci-hardware/"> repo </a>.
             </p>
 
             <p class="text-justify">
@@ -291,6 +292,15 @@
             <h2>The Software</h2><a name="the_software"></a>
         </header> 
             <br>
+<h3>Basic sanity checks</h3>
+
+            <p class="text-justify">As EEG signals are very faint, it can make sense to first test for stronger signals.  One of the easiest ways to do this is to connect the ici&middot;bici to a computer and analyse the incoming signal using something like <a href="https://www.audacityteam.org/download/">Audacity</a> or Matlab (see the code <a href="http://robertoostenveld.nl/first-steps-with-a-e20-single-channel-eeg-system/">here</a>):
+		    <ol>
+			    <li>electrocardiogram (ECG): attach the A and B electrodes to your chest, the COM electrode to an arm or leg, and see whether the signal looks like a heart beat;</li>
+			    <li>electromyogram (EMG): <a href="http://seniam.org/sensor_location.htm">this site</a> shows various locations for electrode placement.  We have placed the A and B electrodes on the jaw (the COM on the neck) to pick up gnashing of teeth.</li>
+                    </ol>
+            </p>
+
 <h3><a href="https://github.com/icibici/Android-diagnostic-app">Android diagnostic APK</a></h3>            
             <p class="text-justify">The basic Android diagnostic app is available for <a href="https://github.com/capitancambio/smartphone-bci/releases">download here</a>. 
 				
