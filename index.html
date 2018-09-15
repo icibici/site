@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>ici&middot;bici: here's a low cost, open source brain-computer interface</title>
+    <title>icibici: here's a low cost, open source brain-computer interface</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -36,7 +36,7 @@
 									<img id="smartphonebci-logo" src="images/smartphonebci.png"/>
 								</div>
 								<div class="col-xs-8">
-									<h1 class="text-right">ici&middot;bici</h1>
+									<h1 class="text-right">icibici</h1>
 									<p class="text-right">a brain-computer interface for under &pound;20 that you can use with your phone, tablet, laptop...</p>
 									<br>
 								</div>
@@ -105,7 +105,9 @@
         </header>
             <br>
 	
-	<h3><strong>ALERT: if your board has a blue screw terminal, the positive and negative battery terminals are reversed.  Read the hardware instructions, below, carefully before use.</strong></h3>
+	<h3><strong>If your board has a blue screw terminal, the positive and negative battery terminals are reversed.  Read the hardware instructions, below, carefully before use.</strong></h3>
+
+	<h3><strong>The icibici kit is intended for use for ENGINEERING DEVELOPMENT, DEMONSTRATION, OR EVALUATION PURPOSES ONLY and is not considered by its developers to be a finished end-product fit for general consumer use. Persons handling the product(s) must observe good engineering practice standards; in particular, it must not be used while plugged into a device (e.g. laptop, tablet, phone) that is plugged into the mains to charge.</strong></h3>
 	
 	<p class="text-justify">
           <span style="color:red">
@@ -244,8 +246,9 @@
 		    a board with a blue screw terminal) <strong>should not harm the boards</strong>.  
 		    
 		    <p class="text-justify">
-		   On 8 October 2017, we tested this
-		    by attaching an external signal generator to a positive and negative terminal separated by a saline solution in which 
+			    On 8 October 2017, we tested this by creating a simplified 
+			    <strong><a href="https://groups.google.com/forum/#!topic/icibici/TpNdwB-PoNM">artificial brain</a></strong> by attaching 
+			    an external signal generator to a positive and negative terminal separated by a saline solution in which 
 		    the icibici electrodes were immersed: a functioning board should be able to read the signal crossing the saline 
 		    solution.  We first ran current backwards through the boards.  We then re-inserted the battery the right way around 
 		    and immersed the electrodes in the saline solution: they continued to correctly read the test signal.  
@@ -256,10 +259,27 @@
 		    boards that we had run in reverse, we re-tested the initial boards, and found that they did read the signals 
 		    correctly.  We have not sought to identify why our two initial tests were unsuccessful.
 				    
-		<p class="text-justify">
-			If you have <strong>questions about whether your board is functioning properly</strong>, attaching it to a 
-			signal generator like this is the cleanest test we have found so far.
 	
+	    <h3>Is my board working?</h3>
+
+	    <p class="text-justify">As neural signals are very faint, it is common to be unsure whether the board is working properly.
+		    This section describes some simple 'sanity' checks.
+		    
+		    <ol>
+			    <li>Attaching the board to the simplified <a href="https://groups.google.com/forum/#!topic/icibici/TpNdwB-PoNM">artificial brain</a>
+			    and signal generator, as described above, is the cleanest test we have found so far of a board's ability to
+				    receive signals.</li>
+			    <li>As EEG signals are very faint, it can make sense to first test for stronger signals.  One of the 
+				    easiest ways to do this is to connect the icibici to a computer and analyse the incoming signal 
+				    using something like <a href="https://www.audacityteam.org/download/">Audacity</a> or Matlab 
+				    (see the code <a href="http://robertoostenveld.nl/first-steps-with-a-e20-single-channel-eeg-system/">here</a>):
+				<ol>
+					<li>electrocardiogram (ECG): attach the A and B electrodes to your chest, the COM electrode to an arm or leg, and see whether the signal looks like a heart beat;</li>
+					<li>electromyogram (EMG): <a href="http://seniam.org/sensor_location.htm">this site</a> shows various locations for electrode placement.  We have placed the A and B electrodes on the jaw (the COM on the neck) to pick up gnashing of teeth.</li>
+				</ol>
+			</ol>
+            </p>
+			
             <h3>Source files</h3>
             <p class="text-justify">
 		    <ol>
@@ -303,14 +323,6 @@
             <h2>The Software</h2><a name="the_software"></a>
         </header> 
             <br>
-<h3>Basic sanity checks</h3>
-
-            <p class="text-justify">As EEG signals are very faint, it can make sense to first test for stronger signals.  One of the easiest ways to do this is to connect the ici&middot;bici to a computer and analyse the incoming signal using something like <a href="https://www.audacityteam.org/download/">Audacity</a> or Matlab (see the code <a href="http://robertoostenveld.nl/first-steps-with-a-e20-single-channel-eeg-system/">here</a>):
-		    <ol>
-			    <li>electrocardiogram (ECG): attach the A and B electrodes to your chest, the COM electrode to an arm or leg, and see whether the signal looks like a heart beat;</li>
-			    <li>electromyogram (EMG): <a href="http://seniam.org/sensor_location.htm">this site</a> shows various locations for electrode placement.  We have placed the A and B electrodes on the jaw (the COM on the neck) to pick up gnashing of teeth.</li>
-                    </ol>
-            </p>
 
 <h3><a href="https://github.com/icibici/Android-diagnostic-app">Android diagnostic APK</a></h3>            
             <p class="text-justify">The basic Android diagnostic app is available for <a href="https://github.com/capitancambio/smartphone-bci/releases">download here</a>. 
@@ -380,7 +392,7 @@
             <br>
             <p class="text-justify">
             <ol>
-		    <li>5 Nov 2017: read <a href=http://robertoostenveld.nl/first-steps-with-a-e20-single-channel-eeg-system/>Robert Oostenveld's review</a> of ici&middot;bici</li>
+		    <li>5 Nov 2017: read <a href=http://robertoostenveld.nl/first-steps-with-a-e20-single-channel-eeg-system/>Robert Oostenveld's review</a> of icibici</li>
             </ol>
             </p>
 
@@ -423,7 +435,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12 text-right">
-                    <p>ici&middot;bici</p>
+                    <p>icibici</p>
                 </div>
             </div>
         </footer>
